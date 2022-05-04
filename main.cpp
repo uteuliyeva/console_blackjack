@@ -7,6 +7,37 @@
 #include <algorithm>
 #include <ctime>
 
-#include "Card.h"
+#include "Game.h"
 
 using namespace std;
+
+int main() {
+  cout<<"--------Welcome to Blackjack!--------\n\n";
+  int numPlayers=0;
+  while(numPlayers<1||numPlayers>7)
+    {
+      cout<<"Enter the number of players (1-7): ";
+      cin>>numPlayers;
+    }
+
+  vector<string> names;
+  string name;
+  for (int i=0; i<numPlayers;++i)
+    {
+      cout<<"Enter player name: ";
+      cin>>name;
+      names.push_back(name);
+    }
+  cout<<endl;
+
+  Game aGame(names);
+  char response='y';
+  while (response!='n'&&response!='N')
+    {
+      aGame.Play();
+      cout<<"\nDo you want to play again? (y/n): ";
+      cin>>response;
+      cout<<endl;
+    }
+  return 0;
+}
