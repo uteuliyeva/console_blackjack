@@ -1,10 +1,9 @@
 #include <iostream>
-#include <string>
 #include <vector>
-#include <algorithm>
-#include <ctime>
 
 #include "Hand.h"
+
+using namespace std;
 
 Hand::Hand()
 {

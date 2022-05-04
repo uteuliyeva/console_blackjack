@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include "House.h"
 
 using namespace std;

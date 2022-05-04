@@ -1,5 +1,8 @@
+#include <iostream>
 #include <ctime>
 #include "Game.h"
+
+using namespace std;
 
 Game::Game(const vector<string>& names)
 {
@@ -33,13 +36,14 @@ void Game::Play()
   //display hands
   for (pPlayer =m_Players.begin();pPlayer!=m_Players.end();++pPlayer)
     {
-      cout<<*pPlayer<<endl;
+      cout<<*pPlayer;
     }
   cout<<m_House<<endl;
 
   //hitting
   for (pPlayer=m_Players.begin();pPlayer!=m_Players.end();++pPlayer)
     {
+      cout<<endl;
       m_Deck.AdditionalCards(*pPlayer);
     }
 

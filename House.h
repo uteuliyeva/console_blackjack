@@ -4,6 +4,8 @@
 #include <string>
 #include "GenericPlayer.h"
 
+using namespace std;
+
 class House: public GenericPlayer
 {
 public:

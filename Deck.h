@@ -4,6 +4,8 @@
 #include "Hand.h"
 #include "GenericPlayer.h"
 
+using namespace std;
+
 class Deck: public Hand
 {
 public:

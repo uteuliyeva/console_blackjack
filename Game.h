@@ -6,6 +6,9 @@
 #include "Deck.h"
 #include "House.h"
 #include "Player.h"
+#include "GenericPlayer.h"
+
+using namespace std;
 
 class Game
 {
